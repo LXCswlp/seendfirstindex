@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO APP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #6699ff, #cc66ff);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 10px 20px;
+      color: white;
+      width: fit-content;
+      margin: 30px auto 10px;
+    }
+
+    .search-box {
+      display: block;
+      margin: 10px auto 30px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-size: 16px;
+      width: 300px;
+    }
+
+    .search-box::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .todo-wrapper {
+      width: 320px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    #new-task {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+
+    .todo-wrapper button {
+      width: 100%;
+      padding: 10px;
+      background: #6699ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+
+    #task-list .task {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .task-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .task input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+
+    .task.done .task-text {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .task .task-text {
+      font-size: 16px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .menu-options {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      overflow: hidden;
+      display: none;
+      z-index: 10;
+    }
+
+    .menu-options button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+}
+
+  .menu-options button:hover {
+    background: #dbe3ff;
+    color: #000;
+  }
+  .task.highlight {
+    animation: highlightFlash 1s ease-in-out;
+    background-color: #ffffcc !important;
+  }
+
+  @keyframes highlightFlash {
+    0%   { background-color: #ffffcc; }
+    50%  { background-color: #fff9a1; }
+    100% { background-color: #ffffcc; }
+  }
+  </style>
+</head>
+<body>
+  <h1>TODO do your best</h1>
+  <input type="text" placeholder="搜索..." class="search-box" oninput="searchTask(this.value)">
+  <div class="todo-wrapper">
+    <input type="text" id="new-task" placeholder="添加代办事项..." />
+    <button onclick="addTask()">+</button>
+    <div id="task-list"></div>
+  </div>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById('new-task');
+      const text = input.value.trim();
+      if (text === '') return;
+
+      const taskEl = document.createElement('div');
+      taskEl.className = 'task';
+
+      taskEl.innerHTML = `
+        <div class="task-left">
+          <input type="checkbox" onchange="toggleDone(this)">
+          <span class="task-text">${text}</span>
+        </div>
+        <div class="menu">
+          <button class="menu-btn" onclick="toggleMenu(this)">⋮</button>
+          <div class="menu-options">
+            <button onclick="editTask(this)">编辑</button>
+            <button onclick="deleteTask(this)">删除</button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('task-list').appendChild(taskEl);
+      input.value = '';
+    }
+
+    function toggleDone(checkbox) {
+      const task = checkbox.closest('.task');
+      task.classList.toggle('done');
+    }
+
+    function toggleMenu(btn) {
+      const menu = btn.nextElementSibling;
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+      // 自动关闭菜单
+      document.addEventListener('click', function outsideClick(e) {
+        if (!btn.parentElement.contains(e.target)) {
+          menu.style.display = 'none';
+          document.removeEventListener('click', outsideClick);
+        }
+      });
+    }
+
+    function deleteTask(btn) {
+      const task = btn.closest('.task');
+      task.remove();
+    }
+
+    function editTask(btn) {
+      const task = btn.closest('.task');
+      const span = task.querySelector('.task-text');
+      const newText = prompt('修改代办内容：', span.textContent);
+      if (newText !== null && newText.trim() !== '') {
+        span.textContent = newText.trim();
+      }
+      btn.closest('.menu-options').style.display = 'none';
+    }
+    function searchTask(query) {
+      const tasks = document.querySelectorAll('.task');
+      tasks.forEach(task => {
+        const text = task.querySelector('.task-text').textContent.toLowerCase();
+        if (text.includes(query.toLowerCase())) {
+          task.style.display = 'flex';
+        } else {
+          task.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
