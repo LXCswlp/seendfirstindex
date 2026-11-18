@@ -1,1 +1,126 @@
-{"site":"AI 看板 · 每天 1-2 条 AI / 前沿科技大事和好玩的事","stories":[{"angle":"从“修漏洞的补丁反成攻击线索”的反差切入，讲AI自主行动给网络安全带来的新问题。","category":"好玩","date":"2026-11-17","id":8,"note":"事件本身是谷歌威胁情报团队（GTIG）2026-11-16 发布的季度报告《Agentic Threat Activity Crosses a Significant Threshold》，首次观察到攻击者用大模型框架全自动发现漏洞并执行 exploit，框架叫 exploit_agent。谷歌没有给出成功率、受害数量和归属，只说是在一个暴露的 staging 服务器上发现的。","picked":false,"sourceName":"note.com","sourceUrl":"https://note.com/singulax666/n/n13ffc3716861","summary":"据谷歌介绍，AI智能体以安全补丁为线索，在没有人工帮助的情况下制作出了实际可运行的攻击代码。这里的AI智能体是指接受指示后自行推进工作的AI。","title":"谷歌：AI智能体仅凭补丁就独立做出可运行攻击代码"},{"angle":"从出口管制由“卖芯片”延伸到“租算力”切入，讲远程使用先进芯片为何也被纳入监管。","category":"大事","date":"2026-11-17","id":7,"note":"规则由美国商务部产业安全局（BIS）于 2026-11-16 发布，名为《Addressing Remote Access to Advanced Semiconductors》，属暂行最终规则：向全球数据中心提供超过 1200 万 TPP 算力给 D:5 国家（包括中国）企业时需要许可；向印尼、马来西亚、新加坡、泰国、巴西出口先进芯片也要许可；同时废止了拜登时期的 AI Diffusion Rule。看板来源是聚合页，印证见 Nixon Peabody 2026-11-16 的解读。","picked":false,"sourceName":"kimkj.com","sourceUrl":"https://kimkj.com/ja/ai-board-ja/?mod=document&uid=21948","summary":"美国商务部发布暂行最终规则，切断中国企业租用海外数据中心使用美国产AI芯片的途径。向东南亚4国和巴西运送先进芯片时，也需要获得许可。","title":"美国商务部出台暂行最终规则，封堵经海外数据中心远程使用美国AI芯片"},{"angle":"从“不换新设备、给旧物加 AI”切入，聊 AI 落地不一定靠新硬件，改造日常物件也可以很实用。","category":"好玩","date":"2026-11-16","id":6,"note":"按新浪科技“造物 100”第 13 期（2026-11-15）核对：Apple HomeView $299、7 英寸、11 月 13 日开卖；Syncere Lume 落地灯机器人 $2,699、邀约制、首批 2027 年上半年，软件另付费；HIYD 手表背面贴片 Kickstarter 筹约 $66 万、早鸟 $199，参数是厂商说法，FCC 认证和防水测试还没做完；Trepo 冰箱顶设备 $99 预购。","picked":true,"sourceName":"finance.sina.com.cn","sourceUrl":"https://finance.sina.com.cn/tech/roll/2026-11-15/doc-iniyvrfv1770386.shtml","summary":"本周苹果的 HomeView 开卖，它是一块智能家居屏幕，能靠脸认出家里的六个人，每个人看到的主屏幕将会专属定制，售价 299 美元。同一周，另一批造物者选择改造而非重新打造：机械表背面贴一片 2.7 毫米厚的小圆片就多了测心率和睡眠的本事，落地灯在需要时可以成为一台机器人去折衣服、铺床。一台冰箱上放一个小 AI 设备，拿起食材放到摄像头下面就能帮你记账。","title":"落地灯能叠衣服、机械表贴片就能测心率：AI 改造日常物件的新玩法"},{"angle":"从 AI 从写代码走向找漏洞、守安全的角度切入，聊网络安全攻防正在被 AI 改写。","category":"大事","date":"2026-11-16","id":5,"note":"一周回顾，不是 11 月 16 日当天的新闻：GPT-6 Cyber 是 11 月 5–6 日发布的，发现 81 个以前没人知道的 Firefox 高危漏洞，给 948 个 Linux 内核漏洞做出了能用的 exploit，评级从 GPT-5.6 Cyber 的 High 升到 Critical，只给通过审核的 Daybreak Red 客户用。开放权重三家要分开写：Kimi K3.1 Pro 权重 11 月 2–6 日上线（自定义许可）；腾讯 Hy4 是 11 月 4 日预览，截至 11 月 12 日权重还没公开；Inkling 2 Small 发布时闭源，11 月 12 日才按 Apache 2.0 放出权重。看板原来源 aimap.page 是聚合页，这里换成公开报道印证。","picked":true,"sourceName":"The Hindu Business Line","sourceUrl":"https://www.thehindubusinessline.com/info-tech/openais-gpt-6-cyber-finds-81-critical-firefox-flaws-develops-948-linux-exploits/article71672723.ece","summary":"本周 OpenAI 发布网络安全模型 GPT-6 Cyber，该模型发现 81 个 Firefox 高危漏洞，风险评级升至 Critical。同期开放权重模型密集发布，腾讯 Hy4、月之暗面 Kimi K3.1 Pro 和 Thinking Machines Inkling 2 Small 相继推出。","title":"OpenAI 发布网络安全模型 GPT-6 Cyber，发现 81 个 Firefox 高危漏洞"},{"angle":"从“用嘴巴听歌”这个反常识卖点切入，写一篇轻松的 CES 趣物小品，聊它为什么好玩、适合什么场景。","category":"好玩","date":"2026-11-16","id":4,"note":"CES 2026 趣物回顾，不是 11 月的新品：Lava Tech 在 2026 年 1 月 CES 上演示，约 $8.99 一支，预装单曲、按口味配不同艺人的歌。看板上原来挂的来源链接是错的（一个不相关的京东 ebook PDF），这里已换成正确的 CES 报道。","picked":true,"sourceName":"RottenWifi（CES 报道）","sourceUrl":"https://blog.rottenwifi.com/this-bone-conduction-lollipop-played-music-in-your-mouth-at-ces-2026/","summary":"在 CES 2026 上，一款名为 Lollipop Star 的骨传导棒棒糖亮相。它实现了一种听起来像魔术的功能：2026 年听歌不用耳朵，而是用嘴巴，把音乐会“含”在嘴里。","title":"骨传导棒棒糖 Lollipop Star：不用耳朵，用嘴巴“听”音乐"},{"angle":"从“AI 做的工作能不能被核查”切入，把形式化证明、钱包支付和机器人升级放在一起，讲 AI 从生成内容走向可验证、可落地的转折。","category":"大事","date":"2026-11-16","id":3,"note":"11 月 10–13 日那一周的汇总，不是 11 月 16 日当天的新闻：AlphaProof Code 11 月 10 日发布，300 万行以上经 Lean 机器核查的证明（别和博客说的“生成了 600 万行以上 Lean”混用，那是两个数字）；Gemini 4 Hydrogen 11 月 12 日发布，约比 Gemini 3.8 Flash 快 2.5 倍；ChatGPT Wallet 11 月 13 日上线，仅限美国、18 岁以上、ChatGPT Pro 用户，每次购买都要生物识别确认；Gemini Robotics 2.5 11 月 10 日发布，奔驰工厂分拣试点称 96% 成功率是厂商数据，没独立验证过。一手链接：DeepMind AlphaProof Code、OpenAI ChatGPT Wallet。","picked":false,"sourceName":"fruition.net","sourceUrl":"https://fruition.net/frontier/","summary":"DeepMind 的 AlphaProof Code 写了 300 万行 Lean 证明，对 Signal 的加密栈做了形式化验证；Gemini 4 Hydrogen 则作为最新的前沿级模型发布。应用侧，ChatGPT Wallet 让智能体商业进入生产阶段，Gemini Robotics 2.5 则带来了机器人 VLA 的重大升级。","title":"AlphaProof 写下 300 万行 Lean 证明验证 Signal 加密，ChatGPT 钱包与 Gemini 机器人升级同步落地"},{"angle":"从“第一名不等于最划算”切入，聊刷榜成绩和真实使用成本之间的落差。","category":"好玩","date":"2026-11-15","id":2,"note":"成本约 15 倍是当时报道的说法，不是官方定价对比。","picked":false,"sourceName":"jinzi.cyou","sourceUrl":"https://jinzi.cyou/posts/2026-11-14-ai-morning-post/","summary":"谷歌Gemini 4 Carbon在MathArena数学基准上登顶。名次之外更值得看的是价格：据报道，其每次调用成本约为GPT-6.1 Sol的15倍。","title":"Gemini 4 Carbon拿下MathArena第一，单次调用成本却是GPT-6.1 Sol的15倍"},{"angle":"从“规则先于规模”切入，讲AI竞争下半场比的不只是算力和模型，而是谁先把治理规则写清楚。","category":"大事","date":"2026-11-15","id":1,"note":"东盟协定于 2026-11-14 在马尼拉签署，180 天后生效；欧盟 AI 法案第 50 条指引中旧系统标记义务 2026-12-02 到期。","picked":false,"sourceName":"aixsociety.com","sourceUrl":"https://aixsociety.com/daily/2026-11-15","summary":"东盟十国签署首份区域数码经济协定，涵盖人工智能治理，并于一百八十日后生效。欧盟刊出AI法案第五十条指引，旧系统标记义务十二月二日届满。美联储报告显示八成七受访者视AI为金融体系最大风险，并估算数据中心相关债务或逾三万亿美元。","title":"东盟签首份区域数字经济协定、欧盟出AI法案指引、美联储点名AI风险：三线监管同步收紧"}],"updated":"2026-11-17"}
+{
+  "site": "AI 看板 · 每天 1-2 条 AI / 前沿科技大事和好玩的事",
+  "stories": [
+    {
+      "angle": "从“旗舰降价、便宜模型几乎追平旗舰”切入，聊大模型竞争正从拼性能转向拼性价比。",
+      "category": "大事",
+      "date": "2026-11-18",
+      "id": 10,
+      "note": "两条都是 11 月 17 日发布的事，放在 11 月 18 日看板上，别写成今天刚发生的。数字都是 OpenAI 自己公布的：GDPval v2 里 Astra 比上一代高 6.2 个百分点、输出 token 少用 22%；FrontierCode 2.0 里 Sol 只比 Astra 低 0.5 分、成本约五分之一。来源 Unite.AI 是 AI 生成、经编辑审核的报道，不是 OpenAI 一手公告。",
+      "picked": false,
+      "sourceName": "Unite.AI",
+      "sourceUrl": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/",
+      "summary": "OpenAI 11 月 17 日发布 GPT-6.2 Astra 和 GPT-6.2 Sol。Astra 是旗舰，API 价格比上一代便宜两成；Sol 是便宜的日常款，价格不变。在 OpenAI 自己的 GDPval v2 测试里，Astra 比上一代高 6.2 个百分点，输出 token 还少用 22%；在 FrontierCode 2.0 编程测试里，Sol 只比 Astra 低 0.5 分，成本却只有后者大约五分之一。",
+      "title": "GPT-6.2 Astra 和 Sol 上线：旗舰降价，便宜模型几乎追平旗舰"
+    },
+    {
+      "angle": "从“隔热的玻璃为何成了导热高手”切入，讲量子尺度下材料性质翻转的趣味。",
+      "category": "好玩",
+      "date": "2026-11-18",
+      "id": 9,
+      "note": "2026 年 11 月 17 日的报道，研究刊登在《Nature Nanotechnology》上，由美国科罗拉多大学博尔德分校团队完成。现在还只是实验室里的发现，对纳米级芯片散热有启发，但离用上还远。",
+      "picked": false,
+      "sourceName": "TechNews 科技新报",
+      "sourceUrl": "https://technews.tw/2026/11/17/single-atom-glass-revolutionizes-chip-cooling/",
+      "summary": "刊登在《Nature Nanotechnology》上的一项新研究：玻璃被拉伸到只有一个原子宽的时候，不再隔热，反而能高效导热，热量不是平滑流动，而是出现离散的“量子阶梯”。测到的热导率是 380 pW/K，大约是理论极限的 40%。",
+      "title": "玻璃拉到单原子宽，反而成了导热高手"
+    },
+    {
+      "angle": "从“修漏洞的补丁反成攻击线索”的反差切入，讲AI自主行动给网络安全带来的新问题。",
+      "category": "好玩",
+      "date": "2026-11-17",
+      "id": 8,
+      "note": "事件本身是谷歌威胁情报团队（GTIG）2026-11-16 发布的季度报告《Agentic Threat Activity Crosses a Significant Threshold》，首次观察到攻击者用大模型框架全自动发现漏洞并执行 exploit，框架叫 exploit_agent。谷歌没有给出成功率、受害数量和归属，只说是在一个暴露的 staging 服务器上发现的。",
+      "picked": false,
+      "sourceName": "note.com",
+      "sourceUrl": "https://note.com/singulax666/n/n13ffc3716861",
+      "summary": "据谷歌介绍，AI智能体以安全补丁为线索，在没有人工帮助的情况下制作出了实际可运行的攻击代码。这里的AI智能体是指接受指示后自行推进工作的AI。",
+      "title": "谷歌：AI智能体仅凭补丁就独立做出可运行攻击代码"
+    },
+    {
+      "angle": "从出口管制由“卖芯片”延伸到“租算力”切入，讲远程使用先进芯片为何也被纳入监管。",
+      "category": "大事",
+      "date": "2026-11-17",
+      "id": 7,
+      "note": "规则由美国商务部产业安全局（BIS）于 2026-11-16 发布，名为《Addressing Remote Access to Advanced Semiconductors》，属暂行最终规则：向全球数据中心提供超过 1200 万 TPP 算力给 D:5 国家（包括中国）企业时需要许可；向印尼、马来西亚、新加坡、泰国、巴西出口先进芯片也要许可；同时废止了拜登时期的 AI Diffusion Rule。看板来源是聚合页，印证见 Nixon Peabody 2026-11-16 的解读。",
+      "picked": true,
+      "sourceName": "kimkj.com",
+      "sourceUrl": "https://kimkj.com/ja/ai-board-ja/?mod=document&uid=21948",
+      "summary": "美国商务部发布暂行最终规则，切断中国企业租用海外数据中心使用美国产AI芯片的途径。向东南亚4国和巴西运送先进芯片时，也需要获得许可。",
+      "title": "美国商务部出台暂行最终规则，封堵经海外数据中心远程使用美国AI芯片"
+    },
+    {
+      "angle": "从“不换新设备、给旧物加 AI”切入，聊 AI 落地不一定靠新硬件，改造日常物件也可以很实用。",
+      "category": "好玩",
+      "date": "2026-11-16",
+      "id": 6,
+      "note": "按新浪科技“造物 100”第 13 期（2026-11-15）核对：Apple HomeView $299、7 英寸、11 月 13 日开卖；Syncere Lume 落地灯机器人 $2,699、邀约制、首批 2027 年上半年，软件另付费；HIYD 手表背面贴片 Kickstarter 筹约 $66 万、早鸟 $199，参数是厂商说法，FCC 认证和防水测试还没做完；Trepo 冰箱顶设备 $99 预购。",
+      "picked": true,
+      "sourceName": "finance.sina.com.cn",
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-11-15/doc-iniyvrfv1770386.shtml",
+      "summary": "本周苹果的 HomeView 开卖，它是一块智能家居屏幕，能靠脸认出家里的六个人，每个人看到的主屏幕将会专属定制，售价 299 美元。同一周，另一批造物者选择改造而非重新打造：机械表背面贴一片 2.7 毫米厚的小圆片就多了测心率和睡眠的本事，落地灯在需要时可以成为一台机器人去折衣服、铺床。一台冰箱上放一个小 AI 设备，拿起食材放到摄像头下面就能帮你记账。",
+      "title": "落地灯能叠衣服、机械表贴片就能测心率：AI 改造日常物件的新玩法"
+    },
+    {
+      "angle": "从 AI 从写代码走向找漏洞、守安全的角度切入，聊网络安全攻防正在被 AI 改写。",
+      "category": "大事",
+      "date": "2026-11-16",
+      "id": 5,
+      "note": "一周回顾，不是 11 月 16 日当天的新闻：GPT-6 Cyber 是 11 月 5–6 日发布的，发现 81 个以前没人知道的 Firefox 高危漏洞，给 948 个 Linux 内核漏洞做出了能用的 exploit，评级从 GPT-5.6 Cyber 的 High 升到 Critical，只给通过审核的 Daybreak Red 客户用。开放权重三家要分开写：Kimi K3.1 Pro 权重 11 月 2–6 日上线（自定义许可）；腾讯 Hy4 是 11 月 4 日预览，截至 11 月 12 日权重还没公开；Inkling 2 Small 发布时闭源，11 月 12 日才按 Apache 2.0 放出权重。看板原来源 aimap.page 是聚合页，这里换成公开报道印证。",
+      "picked": true,
+      "sourceName": "The Hindu Business Line",
+      "sourceUrl": "https://www.thehindubusinessline.com/info-tech/openais-gpt-6-cyber-finds-81-critical-firefox-flaws-develops-948-linux-exploits/article71672723.ece",
+      "summary": "本周 OpenAI 发布网络安全模型 GPT-6 Cyber，该模型发现 81 个 Firefox 高危漏洞，风险评级升至 Critical。同期开放权重模型密集发布，腾讯 Hy4、月之暗面 Kimi K3.1 Pro 和 Thinking Machines Inkling 2 Small 相继推出。",
+      "title": "OpenAI 发布网络安全模型 GPT-6 Cyber，发现 81 个 Firefox 高危漏洞"
+    },
+    {
+      "angle": "从“用嘴巴听歌”这个反常识卖点切入，写一篇轻松的 CES 趣物小品，聊它为什么好玩、适合什么场景。",
+      "category": "好玩",
+      "date": "2026-11-16",
+      "id": 4,
+      "note": "CES 2026 趣物回顾，不是 11 月的新品：Lava Tech 在 2026 年 1 月 CES 上演示，约 $8.99 一支，预装单曲、按口味配不同艺人的歌。看板上原来挂的来源链接是错的（一个不相关的京东 ebook PDF），这里已换成正确的 CES 报道。",
+      "picked": true,
+      "sourceName": "RottenWifi（CES 报道）",
+      "sourceUrl": "https://blog.rottenwifi.com/this-bone-conduction-lollipop-played-music-in-your-mouth-at-ces-2026/",
+      "summary": "在 CES 2026 上，一款名为 Lollipop Star 的骨传导棒棒糖亮相。它实现了一种听起来像魔术的功能：2026 年听歌不用耳朵，而是用嘴巴，把音乐会“含”在嘴里。",
+      "title": "骨传导棒棒糖 Lollipop Star：不用耳朵，用嘴巴“听”音乐"
+    },
+    {
+      "angle": "从“AI 做的工作能不能被核查”切入，把形式化证明、钱包支付和机器人升级放在一起，讲 AI 从生成内容走向可验证、可落地的转折。",
+      "category": "大事",
+      "date": "2026-11-16",
+      "id": 3,
+      "note": "11 月 10–13 日那一周的汇总，不是 11 月 16 日当天的新闻：AlphaProof Code 11 月 10 日发布，300 万行以上经 Lean 机器核查的证明（别和博客说的“生成了 600 万行以上 Lean”混用，那是两个数字）；Gemini 4 Hydrogen 11 月 12 日发布，约比 Gemini 3.8 Flash 快 2.5 倍；ChatGPT Wallet 11 月 13 日上线，仅限美国、18 岁以上、ChatGPT Pro 用户，每次购买都要生物识别确认；Gemini Robotics 2.5 11 月 10 日发布，奔驰工厂分拣试点称 96% 成功率是厂商数据，没独立验证过。一手链接：DeepMind AlphaProof Code、OpenAI ChatGPT Wallet。",
+      "picked": false,
+      "sourceName": "fruition.net",
+      "sourceUrl": "https://fruition.net/frontier/",
+      "summary": "DeepMind 的 AlphaProof Code 写了 300 万行 Lean 证明，对 Signal 的加密栈做了形式化验证；Gemini 4 Hydrogen 则作为最新的前沿级模型发布。应用侧，ChatGPT Wallet 让智能体商业进入生产阶段，Gemini Robotics 2.5 则带来了机器人 VLA 的重大升级。",
+      "title": "AlphaProof 写下 300 万行 Lean 证明验证 Signal 加密，ChatGPT 钱包与 Gemini 机器人升级同步落地"
+    },
+    {
+      "angle": "从“第一名不等于最划算”切入，聊刷榜成绩和真实使用成本之间的落差。",
+      "category": "好玩",
+      "date": "2026-11-15",
+      "id": 2,
+      "note": "成本约 15 倍是当时报道的说法，不是官方定价对比。",
+      "picked": false,
+      "sourceName": "jinzi.cyou",
+      "sourceUrl": "https://jinzi.cyou/posts/2026-11-14-ai-morning-post/",
+      "summary": "谷歌Gemini 4 Carbon在MathArena数学基准上登顶。名次之外更值得看的是价格：据报道，其每次调用成本约为GPT-6.1 Sol的15倍。",
+      "title": "Gemini 4 Carbon拿下MathArena第一，单次调用成本却是GPT-6.1 Sol的15倍"
+    },
+    {
+      "angle": "从“规则先于规模”切入，讲AI竞争下半场比的不只是算力和模型，而是谁先把治理规则写清楚。",
+      "category": "大事",
+      "date": "2026-11-15",
+      "id": 1,
+      "note": "东盟协定于 2026-11-14 在马尼拉签署，180 天后生效；欧盟 AI 法案第 50 条指引中旧系统标记义务 2026-12-02 到期。",
+      "picked": false,
+      "sourceName": "aixsociety.com",
+      "sourceUrl": "https://aixsociety.com/daily/2026-11-15",
+      "summary": "东盟十国签署首份区域数码经济协定，涵盖人工智能治理，并于一百八十日后生效。欧盟刊出AI法案第五十条指引，旧系统标记义务十二月二日届满。美联储报告显示八成七受访者视AI为金融体系最大风险，并估算数据中心相关债务或逾三万亿美元。",
+      "title": "东盟签首份区域数字经济协定、欧盟出AI法案指引、美联储点名AI风险：三线监管同步收紧"
+    }
+  ],
+  "updated": "2026-11-18"
+}
